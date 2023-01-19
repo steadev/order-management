@@ -16,7 +16,8 @@ class App extends StatelessWidget {
         body: Table(
           border: TableBorder.all(),
           children: [
-            buildRow(['이름', '연락처', '송금확인', '배송확인'])
+            buildRow(['이름', '연락처', '송금확인', '배송확인']),
+            buildRow(['이명주', '01029541187', 'O', 'X'])
           ],
         ),
       ),
