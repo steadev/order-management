@@ -15,6 +15,12 @@ class App extends StatelessWidget {
         ),
         body: Table(
           border: TableBorder.all(),
+          columnWidths: const {
+            0: FlexColumnWidth(2),
+            1: FlexColumnWidth(3),
+            2: FlexColumnWidth(1),
+            3: FlexColumnWidth(1),
+          },
           children: [
             buildRow(['이름', '연락처', '송금확인', '배송확인']),
             buildRow(['이명주', '01029541187', 'O', 'X'])
