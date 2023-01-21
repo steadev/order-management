@@ -23,7 +23,9 @@ class App extends StatelessWidget {
           },
           children: [
             buildRow(['이름', '연락처', '송금확인', '배송확인']),
-            buildRow(['이명주', '01029541187', 'O', 'X'])
+            buildRow(['이명주', '01029541187', 'O', 'X']),
+            buildRow(['고지정', '01093776251', 'X', 'O']),
+            buildRow(['이택주', '01067492500', 'X', 'X'])
           ],
         ),
       ),
