@@ -16,8 +16,8 @@ class App extends StatelessWidget {
         body: Table(
           border: TableBorder.all(),
           columnWidths: const {
-            0: FlexColumnWidth(2),
-            1: FlexColumnWidth(3),
+            0: FlexColumnWidth(1.5),
+            1: FlexColumnWidth(2),
             2: FlexColumnWidth(1),
             3: FlexColumnWidth(1),
           },
