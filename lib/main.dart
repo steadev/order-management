@@ -73,7 +73,7 @@ class App extends StatelessWidget {
       title: 'Flutter layout demo',
       home: Scaffold(
         appBar: AppBar(
-          title: const Text('Flutter layout demo'),
+          title: const Text('Flutter layout tutorial'),
         ),
         body: ListView(
           children: [
