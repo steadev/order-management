@@ -88,15 +88,11 @@ class App extends StatelessWidget {
           items: const <BottomNavigationBarItem>[
             BottomNavigationBarItem(
               icon: Icon(Icons.home),
-              label: 'Home',
+              label: '주문 목록',
             ),
             BottomNavigationBarItem(
               icon: Icon(Icons.business),
-              label: 'Business',
-            ),
-            BottomNavigationBarItem(
-              icon: Icon(Icons.school),
-              label: 'School',
+              label: '통계',
             ),
           ],
         ),
