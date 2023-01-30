@@ -36,7 +36,7 @@ class App extends StatelessWidget {
             ),
           ),
           /*3*/
-          FavoriteWidget()
+          const FavoriteWidget()
         ],
       ),
     );
@@ -123,8 +123,10 @@ class App extends StatelessWidget {
 }
 
 class FavoriteWidget extends StatefulWidget {
+  const FavoriteWidget({super.key});
+
   @override
-  _FavoriteWidgetState createState() => _FavoriteWidgetState();
+  State<FavoriteWidget> createState() => _FavoriteWidgetState();
 }
 
 class _FavoriteWidgetState extends State<FavoriteWidget> {
@@ -139,16 +141,16 @@ class _FavoriteWidgetState extends State<FavoriteWidget> {
         Container(
           padding: const EdgeInsets.all(0),
           child: IconButton(
-            icon: (_isFavorited ? Icon(Icons.star) : Icon(Icons.star_border)),
+            icon: (_isFavorited
+                ? const Icon(Icons.star)
+                : const Icon(Icons.star_border)),
             color: Colors.red[500],
             onPressed: _toggleFavorite,
           ),
         ),
         SizedBox(
           width: 18,
-          child: Container(
-            child: Text('$_favoriteCount'),
-          ),
+          child: Text('$_favoriteCount'),
         ),
       ],
     );
